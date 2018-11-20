@@ -1,63 +1,112 @@
-## Exclude all
-*
+# VIVADO directories
+convplex.cache/
+convplex.hw/
+convplex.ip_user_files/
+convplex.runs/
+convplex.sim/
 
+# VIVADO jourals
+*.jou
 
-## Include GIT
-!*/
-!.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# C extensions
+*.so
 
-## Include VIVADO
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-#Source files:
-!*.vhd
-!*.v
-!*.bd
-!*.edif
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-#IP files
-!*.xci
-!*.dcp
-!*.vds
-!*.pb
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-#All bd comments and layout coordinates are stored within .ui
-!*.ui
-!*.ooc
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
-#System Generator
-!*.mdl
-!*.slx
-!*.bxml
+# Translations
+*.mo
+*.pot
 
-#Simulation logic analyzer
-!*.wcfg
-!*.coe
+# Django stuff:
+*.log
+local_settings.py
 
-#MIG
-!*.prj
-!*.mem
+# Flask stuff:
+instance/
+.webassets-cache
 
-#Project files
-!*.xpr
+# Scrapy stuff:
+.scrapy
 
-#Constraint files
-!*.xdc
+# Sphinx documentation
+docs/_build/
 
-#TCL - files
-!*.tcl
+# PyBuilder
+target/
 
-#Journal - files
-!*.jou
+# Jupyter Notebook
+.ipynb_checkpoints
 
-#Reports
-!*.rpt
-!*.txt
-!*.vdi
+# pyenv
+.python-version
 
-#C-files
-!*.c
-!*.h
-!*.elf
-!*.bmm
-!*.xmp
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# PyCharm settings
+.idea/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
